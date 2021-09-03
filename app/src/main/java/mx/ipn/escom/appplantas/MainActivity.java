@@ -1,8 +1,11 @@
 package mx.ipn.escom.appplantas;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -14,6 +17,7 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
+import mx.ipn.escom.appplantas.DB.DBHelper;
 import mx.ipn.escom.appplantas.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,12 +25,30 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
 
+    Button BtnCre;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        BtnCre = findViewById(R.id.BtnCrear);       //Buscamos al Btn y lo
+
+        BtnCre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DBHelper dbHelper = new DBHelper(MainActivity.this);
+                SQLiteDatabase DB = dbHelper.getWritableDatabase();
+
+                if(DB != null){
+                    Toast.makeText(MainActivity.this, "Base de datos creada", Toast.LENGTH_LONG).show();
+                }else{
+                    Toast.makeText(MainActivity.this, "Error al crear la Base de datos", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
 
         setSupportActionBar(binding.appBarMain.toolbar);
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
