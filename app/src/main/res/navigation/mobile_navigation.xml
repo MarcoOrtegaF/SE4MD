@@ -18,8 +18,7 @@
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="mx.ipn.escom.appplantas.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_nuevo_plantas"
+        android:name="mx.ipn.escom.appplantas.ui.nuevos.NuevoFragmento"
+        tools:layout="@layout/nuevo_plnt" />
 </navigation>
