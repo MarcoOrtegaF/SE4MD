@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="trescientos">300dp</dimen>
+    <dimen name="ciensesen">160dp</dimen>
+    <dimen name="ciensete">170dp</dimen>
+    <dimen name="setenta">70dp</dimen>
+    <dimen name="cuaren">40dp</dimen>
+    <dimen name="trecinco">35dp</dimen>
+    <dimen name="treinta">30dp</dimen>
+    <dimen name="veinte">20dp</dimen>
+    <dimen name="quince">15dp</dimen>
+    <dimen name="diez">10dp</dimen>
+    <dimen name="cinco">5dp</dimen>
+    <dimen name="ocho">8sp</dimen>
+    <dimen name="letradoce">12sp</dimen>
+    <dimen name="letradieocho">18sp</dimen>
+    <dimen name="letratrein">30sp</dimen>
+    <dimen name="letraveintiuno">23sp</dimen>
+    <dimen name="letraveintcinco">25sp</dimen>
+    <dimen name="letradiezseis">16sp</dimen>
+</resources>
