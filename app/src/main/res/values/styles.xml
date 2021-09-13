@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="firstauto">
+        <item name="android:layout_height">@dimen/cuaren</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/letradoce</item>
+     <!--   <item name="android:background">@drawable/rounded_white</item>-->
+        <item name="android:layout_marginStart">@dimen/quince</item>
+        <item name="android:layout_marginEnd">@dimen/quince</item>
+        <item name="android:drawablePadding">@dimen/cinco</item>
+        <item name="android:paddingStart">@dimen/diez</item>
+        <item name="android:layout_marginBottom">@dimen/diez</item>
+    </style>
+
+    <style name="list">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:layout_marginStart">@dimen/quince</item>
+        <item name="android:layout_marginEnd">@dimen/quince</item>
+        <item name="android:layout_marginBottom">@dimen/diez</item>
+
+    </style>
+</resources>

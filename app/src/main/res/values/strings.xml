@@ -7,7 +7,11 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_home">Mis plantas</string>
+    <string name="menu_gallery">Consultar</string>
+    <string name="titulo">Plantae S.A. de C.V.</string>
+    <string name="version">Vers. 0.0</string>
+
+    <string name="nombre_pl">Nombre de la planta</string>
+    <string name="nuevo_planta">Registrar planta</string>
 </resources>
