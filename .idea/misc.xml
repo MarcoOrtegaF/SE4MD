@@ -3,24 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/samir/Desktop/ESCOM/IS _ Mobile/proyecto_1/app/src/main/res/drawable/ic_baseline_control_point_24.xml" value="0.11614583333333334" />
-        <entry key="..\:/Users/samir/Desktop/ESCOM/IS _ Mobile/proyecto_1/app/src/main/res/drawable/ic_baseline_grass_24.xml" value="0.1125" />
-        <entry key="..\:/Users/samir/Desktop/ESCOM/IS _ Mobile/proyecto_1/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1125" />
-        <entry key="..\:/Users/samir/Desktop/ESCOM/IS _ Mobile/proyecto_1/app/src/main/res/drawable/side_nav_bar.xml" value="0.1125" />
-        <entry key="..\:/Users/samir/Desktop/ESCOM/IS _ Mobile/proyecto_1/app/src/main/res/layout/Catalogo.xml" value="0.22" />
-        <entry key="..\:/Users/samir/Desktop/ESCOM/IS _ Mobile/proyecto_1/app/src/main/res/layout/activity_main.xml" value="0.14" />
-        <entry key="..\:/Users/samir/Desktop/ESCOM/IS _ Mobile/proyecto_1/app/src/main/res/layout/app_bar_main.xml" value="0.17721518987341772" />
-        <entry key="..\:/Users/samir/Desktop/ESCOM/IS _ Mobile/proyecto_1/app/src/main/res/layout/catalogo.xml" value="0.18" />
-        <entry key="..\:/Users/samir/Desktop/ESCOM/IS _ Mobile/proyecto_1/app/src/main/res/layout/content_main.xml" value="0.1" />
-        <entry key="..\:/Users/samir/Desktop/ESCOM/IS _ Mobile/proyecto_1/app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
-        <entry key="..\:/Users/samir/Desktop/ESCOM/IS _ Mobile/proyecto_1/app/src/main/res/layout/fragment_home.xml" value="0.1" />
-        <entry key="..\:/Users/samir/Desktop/ESCOM/IS _ Mobile/proyecto_1/app/src/main/res/layout/fragment_slideshow.xml" value="0.1" />
-        <entry key="..\:/Users/samir/Desktop/ESCOM/IS _ Mobile/proyecto_1/app/src/main/res/layout/mis_plantas.xml" value="0.15" />
-        <entry key="..\:/Users/samir/Desktop/ESCOM/IS _ Mobile/proyecto_1/app/src/main/res/layout/nav_header_main.xml" value="0.25" />
-        <entry key="..\:/Users/samir/Desktop/ESCOM/IS _ Mobile/proyecto_1/app/src/main/res/layout/nuevo_plnt.xml" value="0.18" />
-        <entry key="..\:/Users/samir/Desktop/ESCOM/IS _ Mobile/proyecto_1/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
-        <entry key="..\:/Users/samir/Desktop/ESCOM/IS _ Mobile/proyecto_1/app/src/main/res/menu/main.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/content_main.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/activity_alta_planta.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.27488151658767773" />
+        <entry key="app/src/main/res/layout/altasplantas.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.17061611374407584" />
+        <entry key="app/src/main/res/layout/catalogo.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/lista_plantas.xml" value="0.3094650205761317" />
+        <entry key="app/src/main/res/layout/mis_plantas.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/nuevo_plnt.xml" value="0.33" />
+        <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.5" />
+        <entry key="app/src/main/res/menu/main.xml" value="0.19583333333333333" />
       </map>
     </option>
   </component>

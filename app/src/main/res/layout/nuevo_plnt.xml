@@ -6,70 +6,176 @@
     android:layout_height="match_parent"
     tools:context=".ui.nuevos.NuevoFragmento">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="356dp"
-        android:layout_height="43dp"
-        android:ems="10"
-        android:hint="Nombre de la planta"
-        android:inputType="textPersonName"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="117dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="356dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="Especie"
-        android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="348dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="Tipo"
-        android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="354dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:hint="Localidad"
-        android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp" />
+                <ImageView
+                    android:id="@+id/ImgPla"
+                    android:layout_width="136dp"
+                    android:layout_height="124dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/ic_baseline_compost_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="211dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="56dp"
-        android:text="Seleccionar imagen"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp" />
+                <EditText
+                    android:id="@+id/txtNom"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Nombre de la planta"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ImgPla"
+                    tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="86dp"
-        android:text="Listo"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        tools:layout_editor_absoluteX="152dp" />
+                <EditText
+                    android:id="@+id/txtEsp"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="Especie"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtNom"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/txtTipo"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="Tipo"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtEsp"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/txtEdad"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="Edad"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTipo"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/txtCdPlan"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="Mes para plantar"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtEdad"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/txtLugar"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="Lugar (Maceta, Jardin, etc.)"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtCdPlan"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/txtDimensiones"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="Dimensiones"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtLugar"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/txtNotas"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="Notas"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDimensiones"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/txtUrl"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="URL para la Imagen"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtNotas"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/btnSelImg"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Probar Imagen"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtUrl"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/btnList"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:text="Listo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnSelImg" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

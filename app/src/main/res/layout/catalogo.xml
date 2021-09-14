@@ -6,25 +6,114 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="611dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnBusc"
+        tools:layout_editor_absoluteX="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/Imgsal"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtNombSal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@+id/Imgsal" />
+
+                <TextView
+                    android:id="@+id/txtEspSal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@+id/txtNombSal" />
+
+                <TextView
+                    android:id="@+id/txtNotSal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@+id/txtEspSal"
+                    tools:layout_editor_absoluteX="2dp" />
+
+                <TextView
+                    android:id="@+id/txtDimSal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@+id/txtNotSal" />
+
+                <TextView
+                    android:id="@+id/txtCdSAl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDimSal" />
+
+                <TextView
+                    android:id="@+id/txtLugSal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@+id/txtCdSAl"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <TextView
+                    android:id="@+id/txtEdadSal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@+id/txtLugSal" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnBusc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:text="Buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
-        android:id="@+id/id_buscando"
-        style="@style/firstauto"
-        android:hint="@string/nombre_pl"
+        android:id="@+id/txtNomBus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nombre de la planta"
+        app:layout_constraintEnd_toStartOf="@+id/btnBusc"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        android:inputType="text"
-        android:textColor="@color/black"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="78dp" />
-
-    <ListView
-        android:id="@+id/id_listview_buscar"
-        style="@style/list"
-        android:layout_width="400dp"
-        android:layout_height="540dp"
-        android:layout_marginTop="76dp"
-        app:layout_constraintTop_toBottomOf="@+id/id_buscando"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="5dp"
-        />
 </androidx.constraintlayout.widget.ConstraintLayout>

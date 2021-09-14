@@ -17,8 +17,15 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+
+import mx.ipn.escom.appplantas.Adaptadores.ListaPLantasAdapter;
 import mx.ipn.escom.appplantas.DB.DBHelper;
+import mx.ipn.escom.appplantas.DB.DBPlantas;
+import mx.ipn.escom.appplantas.Entidades.Plantas;
 import mx.ipn.escom.appplantas.databinding.ActivityMainBinding;
 import mx.ipn.escom.appplantas.ui.nuevos.NuevoFragmento;
 
@@ -26,31 +33,30 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
-
-    //Button BtnCre;
+    RecyclerView ListaPlantas;
+    ArrayList <Plantas> listaArrContactos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        //BtnCre = findViewById(R.id.BtnCrear);       //Buscamos al Btn y lo
+        ListaPlantas = findViewById(R.id.RecViLista);
+        ListaPlantas.setLayoutManager(new LinearLayoutManager(this));
 
-        /*BtnCre.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                DBHelper dbHelper = new DBHelper(MainActivity.this);
-                SQLiteDatabase DB = dbHelper.getWritableDatabase();
+        DBPlantas dbPlantas = new DBPlantas(MainActivity.this);
 
-                if(DB != null){
-                    Toast.makeText(MainActivity.this, "Base de datos creada", Toast.LENGTH_LONG).show();
-                }else{
-                    Toast.makeText(MainActivity.this, "Error al crear la Base de datos", Toast.LENGTH_LONG).show();
-                }
-            }
-        });*/
+        listaArrContactos = new ArrayList<>();
+
+        ListaPLantasAdapter adapter = new ListaPLantasAdapter(DBPlantas.mostrarPlantas());
+        ListaPlantas.setAdapter(adapter);
+
+
+
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         setSupportActionBar(binding.appBarMain.toolbar);
