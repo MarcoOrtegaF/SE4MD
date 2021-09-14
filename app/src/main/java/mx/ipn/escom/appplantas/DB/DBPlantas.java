@@ -75,7 +75,7 @@ public class DBPlantas extends DBHelper{
         return ListaPlantas;
     }
 
-    public String ObtBusq(){
+    /*public String ObtBusq(){
         String query;
         DBHelper dbHelper = new DBHelper(context);
         SQLiteDatabase DB = dbHelper.getWritableDatabase();
@@ -84,5 +84,5 @@ public class DBPlantas extends DBHelper{
         cursorPlantas = DB.rawQuery("SELECT * FROM " + TABLE_PLANTAS, null);
 
 
-    }
+    }*/
 }

@@ -31,11 +31,11 @@ public class GalleryFragment extends Fragment{
         txtNombreIn =  getActivity().findViewById(R.id.txtNomBus);
 
 
-        btnBucar.setOnClickListener(new View.OnClickListener() {               //BOTON PARA SETEAR LA IMAGEN DE LA PLANTA
+        /*btnBucar.setOnClickListener(new View.OnClickListener() {               //BOTON PARA SETEAR LA IMAGEN DE LA PLANTA
             @Override
             public void onClick(View view) {
 
-        });
+        });*/
 
         return v;
     }
